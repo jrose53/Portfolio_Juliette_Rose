@@ -4,8 +4,45 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.contact-link {
+body {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.hero {
+  background-color: #f9f7fe;
+  margin: 0;
+  width: 100%;
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link,
+.about-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .contact-link,
+  .about-link {
+    font-size: 15px;
+    text-align: center;
+  }
 }
