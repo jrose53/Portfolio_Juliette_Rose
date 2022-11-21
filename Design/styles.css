@@ -4,15 +4,27 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  padding-left: 70px;
-  padding-right: 70px;
-}
 .hero {
-  background-color: #f9f7fe;
-  margin: 0;
-  width: 100%;
+  background: #f9f7fe;
+  text-align: center;
+  font-family: "Nunito";
+  color: black;
 }
+
+.hero h2 {
+  font-size: 25px;
+}
+
+.hero h3 {
+  font-size: 25px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1, 25;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
