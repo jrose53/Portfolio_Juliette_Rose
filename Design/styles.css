@@ -10,7 +10,8 @@
   padding-bottom: 70px;
 }
 
-.about-hero {
+.about-hero,
+.work-hero {
   background: #f9f7fe;
   font-family: "Nunito";
   color: black;
@@ -89,6 +90,12 @@
 .me {
   display: block;
   border-radius: 12px;
+}
+
+.project {
+  display: block;
+  border-radius: 12px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 600px) {
