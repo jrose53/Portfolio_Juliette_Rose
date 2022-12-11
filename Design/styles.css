@@ -4,17 +4,14 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.website-title {
+.website-title,
+.name {
+  display: inline;
   font-size: 20px;
   line-height: 42px;
   margin-left: 15px;
   color: var(--primary-color);
   text-decoration: none;
-}
-
-.logo-footer {
-  width: 10%;
-  margin-left: 15px;
 }
 
 nav {
@@ -44,14 +41,12 @@ nav li.active a {
   text-decoration: none;
 }
 
-.about-hero,
-.work-hero {
+.about-hero {
   background: #f9f7fe;
   font-family: "Nunito";
   color: black;
   padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding-bottom: 0px;
   border-radius: 12px;
 }
 .hero {
@@ -77,33 +72,47 @@ nav li.active a {
 }
 
 .navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+  margin-top: 30px;
+}
+
+.navigation-links-deux {
+  margin-top: 30px;
 }
 
 .navigation-links a {
-  margin: 20px;
   border-radius: 4px;
-  padding: 20px 15px;
+  justify-content: end;
+  padding: 13px 15px;
   text-decoration: none;
   text-transform: capitalize;
 }
 
-.contact-link,
+.navigation-links-deux a {
+  border-radius: 4px;
+  justify-content: start;
+  padding: 13px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .about-link,
 .contact-form {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-
+  font-family: "Nunito";
+  font-weight: bold;
   text-align: center;
-  padding: 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   text-decoration: none;
 }
 
-.primary-link {
+.container-contact {
+  padding-left: 44px;
+}
+
+.link-app {
   text-decoration: none;
   background: var(--secondary-color);
   border-radius: 4px;
@@ -111,9 +120,12 @@ nav li.active a {
   color: var(--primary-color);
   font-size: 15px;
   line-height: 27px;
-  padding: 15px 30px;
-
+  padding: 15px 15px;
   font-family: "Nunito";
+}
+
+.frame-button {
+  padding-left: 25px;
 }
 
 .contact100-form-btn {
@@ -140,18 +152,81 @@ nav li.active a {
   color: white;
   font-size: 20px;
   line-height: 50px;
-
   font-family: "Nunito";
   font-weight: 400;
 }
 
-.titre {
+.titre,
+.titre-about {
   font-family: "Nunito";
   font-weight: bold;
+  font-size: 40px;
+}
+
+.titre-work {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+
+.titre-contact {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 0px;
+  padding-left: 27px;
+}
+
+.sous-titre-work {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  color: #6c63ff;
+}
+
+.texte-work {
+  font-family: "Nunito";
+
+  font-size: 15px;
+
+  padding-left: 25px;
+}
+
+.date {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 30px;
+  color: #6c63ff;
+  padding-bottom: 10px;
+}
+
+.texte-about {
+  font-size: 15px;
+  font-family: "nunito";
+  padding-right: 80px;
+}
+
+.position-about {
+  font-size: 20px;
+  font-family: "nunito";
+}
+
+.firmen-about {
+  font-size: 17px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  font-family: "nunito";
+  font-style: italic;
 }
 
 .me {
   display: block;
+  max-width: 90%;
+
   border-radius: 12px;
 }
 
@@ -176,20 +251,27 @@ nav li.active a {
 
 .contact-icons {
   padding-left: 40px;
-  padding-top: 50px;
+  padding-top: 160px;
   padding-bottom: 50px;
 }
 
+.container-projects {
+  padding-top: 30px;
+}
+
 footer {
-  background-color: var(--secondary-color);
-  margin: 60px 0;
-  padding-top: 15px;
-  padding-bottom: 7px;
-  margin-bottom: 0px;
+  text-align: center;
+  background-color: white;
+  margin-top: 77px;
+
+  padding-top: 10px;
 
   color: var(--primary-color);
   font-size: 13px;
   font-family: "Nunito";
+
+  bottom: 0;
+  width: 100%;
 }
 
 .text-legals {
@@ -206,19 +288,231 @@ footer {
   color: var(--primary-color);
 }
 
+.keolis-logo {
+  max-width: 40%;
+}
+
+.bosch-logo,
+.casa-logo {
+  max-width: 40%;
+}
+
+.master-logo,
+.uco-logo {
+  max-width: 60%;
+}
+.elite-logo {
+  max-width: 23%;
+}
+
+.lpa-logo {
+  max-width: 20%;
+}
+
+.bar {
+  max-width: 30%;
+}
+
+.projects {
+  border-radius: 20px;
+  padding-right: 200px;
+}
+
+.fa-bootstrap,
+.fa-square-js,
+.fa-html5,
+.fa-css3-alt,
+.fa-github {
+  color: var(--primary-color);
+}
+
+.home-hero {
+  padding-top: 70px;
+  text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 70px;
+}
+
+.visuel-home {
+  display: block;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.titre-home {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
 @media (max-width: 600px) {
-  .contact-link,
-  .about-link {
-    font-size: 15px;
-    text-align: center;
-  }
-  .primary-link {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
+  .me,
+  .bar,
+  .lpa-logo,
+  .master-logo,
+  .elite-logo,
+  .uco.logo,
+  .casa-logo,
+  .bosch-logo,
+  .keolis-logo {
+    display: none;
   }
 
-  .me {
+  .titre {
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .titre-work {
     display: none;
+  }
+
+  .titre-contact {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2px;
+  }
+
+  .titre-about {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  .titre-home {
+    font-size: 18px;
+  }
+
+  .navigation-links,
+  .navigation-links-deux {
+    font-size: 13px;
+  }
+
+  .visuel-home {
+    width: 40%;
+  }
+
+  .home-hero {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .sous-titre-work {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .date {
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .position-about {
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .firmen-about {
+    text-align: center;
+    font-size: 13px;
+    margin: auto;
+  }
+
+  .texte-about,
+  .texte-work {
+    text-align: center;
+    padding: 3px;
+    font-size: 13px;
+    padding-bottom: 0px;
+  }
+
+  .container-about {
+    padding: 1px;
+  }
+
+  .about-hero {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-items {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  footer {
+    background-color: white;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+  }
+
+  .icons-footer,
+  .text-legals {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .project-app,
+  .project-homepage {
+    display: none;
+  }
+
+  .frame-button {
+    text-align: center;
+  }
+
+  .link-app {
+    padding: 8px 22px;
+    font-size: 12px;
+  }
+
+  .container-contact {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 25px;
+  }
+
+  .contact-buttons {
+    max-width: 12%;
+    display: inline-block;
+    text-align: end;
+    font-size: 13px;
+    line-height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
+
+  .contact-icons {
+    margin: auto;
+    padding-left: 70px;
+    padding-top: 35px;
   }
 }

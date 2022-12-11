@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Portfolio of Juliette Rose, Marketing project manager with a passion for coding. Discover all my projects and what i´ve done so far. You can contact me using the contact form or on social network"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,25 +31,29 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+        <script
+      src="https://kit.fontawesome.com/40e6092b2a.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>My projects</title>
+    <title> Projects</title>
     <link rel="stylesheet" href="Design/styles.css" />
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a class="website-title">
+        <a href="index.html" class="website-title">
           <img
             src="images/logo.png"
             width="50"
             height="50"
             class="logo d-inline-block align-middle"
-            alt=""
+            alt="logo Juliette Rose"
           />
-          Juliette Rose
+        <p class="name"> Juliette Rose </p>  
         </a>
 
-        <ul>
+        <ul class="navbar-items">
           <li class="active">
             <a href="index.html"> Home</a>
           </li>
@@ -56,53 +61,79 @@
             <a href="about.html"> About</a>
           </li>
           <li>
-            <a href="work.html"> Work</a>
+            <a href="work.html"> Projects</a>
           </li>
           <li>
             <a href="contact.html"> Contact</a>
           </li>
         </ul>
-      </nav>
-    <h1 class="text-center pt-5 pb-5">Discover my projects</h1>
-    <div class="work-hero container">
+      </nav>   
+    <h1 class="titre-work pt-5">Discover my projects...</h1>
+    <div class="container-projects">
       <div class="row">
-        <div class="col-6">
-          <img src="images/projectun.PNG" alt="" class="project img-fluid" />
+        <div class="col-md-6">
+
+          <div class="project-app pb-5 rounded embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="https://rad-maamoul-0616c0.netlify.app/" width="550" height="450" alt="weather app" allowfullscreen></iframe>
+</div>
+
+
         </div>
-        <div class="col-6 project-p">
-                   <h2>Homepage</h2>
-          <p>Created using following tools : html, CSS, Javascript. </br> Une oeuvre une histoire </p>
+        <div class="weather-app col-md-6">
+                   <h2 class="sous-titre-work pb-3">Weather app</h2>
+          <p class="texte-work">Let me present you my weather app, created using the following tools: boostrap <i class="fa-brands fa-bootstrap"></i>, javascript <i class="fa-brands fa-square-js"></i>, html <i class="fa-brands fa-html5"></i>, css <i class="fa-brands fa-css3-alt"></i>, Github <i class="fa-brands fa-github"></i>, Netlify. </br> </br>
+            This non-responsive app aims at providing the latest weather updates with a special asset: the air quality. </br> </br>
+          Growing up having an asthmatic sister, i could see the importance of having information on air quality before travelling or moving to another city. </p>
+          <div class="frame-button mb-5 mt-5">
+            <a href="https://rad-maamoul-0616c0.netlify.app/" class="link-app" title="Launch Weather app"
+              >Launch Weather App</a
+            >
+          </div>
+       
         </div>
-        <div class="col-6 project-p">
- 
-          <img src="images/projectdeux.PNG" alt="" class="project img-fluid" />
+
+      </div>
+    </div> </div>
+
+
+
+      <div class=" container pt-5 pb-2 mb-0">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="project-homepage pb-5 rounded embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="https://starlit-nasturtium-e20e38.netlify.app/" width="550" height="275" alt="homepage" allowfullscreen></iframe>
+</div>
+
+
         </div>
-        <div class="col-6">
-          <h2>My Weather App</h2>
-          <p>
-            Created using following tools : html, CSS, Javascript. </br> USP: Air
-            quality.
-          </p>
+        <div class="weather-app col-md-6">
+                   <h2 class="sous-titre-work pb-3">Webpage</h2>
+          <p class="texte-work"> As an art lover, I started my coding journey by building a non-responsive webpage about the mysterious stories behind some of the world most famous masterpieces. </br> </br> This homepage was created using the following tools: javascript <i class="fa-brands fa-square-js"></i>, html <i class="fa-brands fa-html5"></i>, css <i class="fa-brands fa-css3-alt"></i>. 
+           </p>
+           <div class="frame-button mb-5 mt-5">
+            <a href="https://starlit-nasturtium-e20e38.netlify.app/" class="link-app" title="Launch homepage"
+              >Launch Webpage</a
+            >
+          </div>
         </div>
       </div>
     </div> </div>
-     <footer>
-      <div class="container footer-container">
-        <div class="row">
-          <div class="col">
-    <a>
-          <img
-            src="images/logo.png"
-            width="50"
-            height="50"
-            class="logo-footer d-inline-block align-middle"
-            alt=""
-          />
-      
-        </a> </div>   
-        <div class="col-6 ">
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="container footer-container mb-1 ml-0">
+        <div class="row d-inline-block justify-content-center">
+       
+        <div class="col-md">
 <div class="row">
-         <div class="col icons-footer">
+         <div class="pt-1 pb-2 icons-footer">
             
             <a href="https://www.linkedin.com/in/juliette-rose1/">
               <i class="fa-brands fa-linkedin-in icone"></i>
@@ -120,7 +151,7 @@
           </div>
 </div>  </div>
 
-<div class="col">
+<div class="col-md justify-content-center pb-1">
 
   <p class="text-legals"> <i class="fa-regular fa-copyright"></i> 2022, Juliette Rose - All rights reserved. </p>
 </div>
@@ -131,5 +162,7 @@
       </div>
         </div>
     </footer>
+
+
   </body>
 </html>
